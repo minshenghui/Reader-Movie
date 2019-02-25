@@ -1,0 +1,35 @@
+<view class='container'>
+    <swiper indicator-dots='true' autoplay='true' indicator-color='#ffbc00' indicator-active-color='#ff7f00'>
+        <swiper-item>
+            <image src="/images/avatar.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/avatar.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/avatar.jpg"></image>
+        </swiper-item>
+    </swiper>
+
+    <block wx:for="{{post_key}}" wx:for-item="item">
+      <view class='post-container'>
+        <view class='post-container-top'>
+          <image class='post-avatar' src='{{item.image}}'></image>
+          <text class='post-time'>{{item.time}}</text>
+        </view>
+          <text class='post-title'>{{item.title}}</text>
+          <image class='post-image' src='{{item.image}}'></image>
+          <text class='post-article'>{{item.article}}</text>
+        <view>
+          <image class='post-like' src='{{item.image}}'></image>
+          <text class='post-data'>{{item.data}}</text>
+          <image class='post-like' src='{{item.image}}'></image>
+          <text class='post-data'>{{item.data}}</text>
+        </view>
+      </view>
+    </block>
+
+</view>
+
+
+
