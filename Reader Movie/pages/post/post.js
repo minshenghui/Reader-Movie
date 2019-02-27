@@ -1,89 +1,95 @@
-// pages/post/post.js
-Page({
+// pages / post / post.js
+Ò³Ãæ£¨{
 
-  /**
-   * é¡µé¢çš„åˆå§‹æ•°æ®
-   */
-  data: {
+  / **
+   *Ò³ÃæµÄ³õÊ¼Êý¾Ý
+   * /
+  Êý¾Ý£º {
 
-  },
-
-  /**
-   * ç”Ÿå‘½å‘¨æœŸå‡½æ•°--ç›‘å¬é¡µé¢åŠ è½½
-   */
-  onLoad: function (options) {
+  }£¬
+  / **
+   *µÚ¶þ´ÎÉÏ´«
+   * /
+  / **
+   *ÉúÃüÖÜÆÚº¯Êý - ¼àÌýÒ³Ãæ¼ÓÔØ
+   * /
+  onLoad £º function£¨options£©{
     var post_data = [
       {
-        image: "/images/avatar.jpg",
-        time: "Feb 24 2019",
-        title: "é•¿æ²™æ€Žä¹ˆè¿˜ä¸å‡ºå¤ªé˜³1",
-        article: "é•¿æ²™å·²ç»å¿«ä¸‹äº†ä¸€ä¸ªæœˆçš„é›¨äº†ï¼Œå¬è¯´è¦ä¸‹åˆ° 3 æœˆåº•åŽ»äº†ï¼Œæˆ‘æ»´ä¸ªç¥žå•Šï¼Œæ´—çš„è¡£æœéƒ½å¹²ä¸äº†ï¼Œæˆ‘è¯¥æ€Žä¹ˆåŠžå•Šï¼",
-        data: "66"
-      }, {
-        image: "/images/avatar.jpg",
-        time: "Feb 24 2019",
-        title: "é•¿æ²™æ€Žä¹ˆè¿˜ä¸å‡ºå¤ªé˜³2",
-        article: "é•¿æ²™å·²ç»å¿«ä¸‹äº†ä¸€ä¸ªæœˆçš„é›¨äº†ï¼Œå¬è¯´è¦ä¸‹åˆ° 3 æœˆåº•åŽ»äº†ï¼Œæˆ‘æ»´ä¸ªç¥žå•Šï¼Œæ´—çš„è¡£æœéƒ½å¹²ä¸äº†ï¼Œæˆ‘è¯¥æ€Žä¹ˆåŠžå•Šï¼",
-        data: "66"
-      }, {
-        image: "/images/avatar.jpg",
-        time: "Feb 24 2019",
-        title: "é•¿æ²™æ€Žä¹ˆè¿˜ä¸å‡ºå¤ªé˜³3",
-        article: "é•¿æ²™å·²ç»å¿«ä¸‹äº†ä¸€ä¸ªæœˆçš„é›¨äº†ï¼Œå¬è¯´è¦ä¸‹åˆ° 3 æœˆåº•åŽ»äº†ï¼Œæˆ‘æ»´ä¸ªç¥žå•Šï¼Œæ´—çš„è¡£æœéƒ½å¹²ä¸äº†ï¼Œæˆ‘è¯¥æ€Žä¹ˆåŠžå•Šï¼",
-        data: "66"
+        Í¼Æ¬£º ¡°/ images / avatar.jpg ¡±£¬
+        Ê±¼ä£º ¡° 2019Äê2ÔÂ24ÈÕ¡±£¬
+        ±êÌâ£º ¡°³¤É³ÔõÃ´»¹²»³öÌ«Ñô1 ¡±£¬
+        ÎÄÕÂ£º ¡°³¤É³ÒÑ¾­¿ìÏÂÁËÒ»¸öÔÂµÄÓêÁË£¬ÌýËµÒªÏÂµ½£¬3ÔÂµ×È¥ÁË£¬ÎÒµÎ¸öÉñ°¡£¬Ï´µÄÒÂ·þ¶¼¸É²»ÁË£¬ÎÒ¸ÃÔõÃ´°ì°¡£¡¡±£¬
+        Êý¾Ý£º ¡° 66 ¡±
+      }£¬{
+        Í¼Æ¬£º ¡°/ images / avatar.jpg ¡±£¬
+        Ê±¼ä£º ¡° 2019Äê2ÔÂ24ÈÕ¡±£¬
+        ±êÌâ£º ¡°³¤É³ÔõÃ´»¹²»³öÌ«Ñô2 ¡±£¬
+        ÎÄÕÂ£º ¡°³¤É³ÒÑ¾­¿ìÏÂÁËÒ»¸öÔÂµÄÓêÁË£¬ÌýËµÒªÏÂµ½£¬3ÔÂµ×È¥ÁË£¬ÎÒµÎ¸öÉñ°¡£¬Ï´µÄÒÂ·þ¶¼¸É²»ÁË£¬ÎÒ¸ÃÔõÃ´°ì°¡£¡¡±£¬
+        Êý¾Ý£º ¡° 66 ¡±
+      }£¬{
+        Í¼Æ¬£º ¡°/ images / avatar.jpg ¡±£¬
+        Ê±¼ä£º ¡° 2019Äê2ÔÂ24ÈÕ¡±£¬
+        ±êÌâ£º ¡°³¤É³ÔõÃ´»¹²»³öÌ«Ñô3 ¡±£¬
+        ÎÄÕÂ£º ¡°³¤É³ÒÑ¾­¿ìÏÂÁËÒ»¸öÔÂµÄÓêÁË£¬ÌýËµÒªÏÂµ½£¬3ÔÂµ×È¥ÁË£¬ÎÒµÎ¸öÉñ°¡£¬Ï´µÄÒÂ·þ¶¼¸É²»ÁË£¬ÎÒ¸ÃÔõÃ´°ì°¡£¡¡±£¬
+        Êý¾Ý£º ¡° 66 ¡±
       }
     ]
-    this.setData({
-      post_key:post_data
-    })
-  },
+    Õâ¸ö¡£setData£¨{
+      post_key £º post_data
+    }£©
+  }£¬
 
-  /**
-   * ç”Ÿå‘½å‘¨æœŸå‡½æ•°--ç›‘å¬é¡µé¢åˆæ¬¡æ¸²æŸ“å®Œæˆ
-   */
-  onReady: function () {
+  / **
+   *ÉúÃüÖÜÆÚº¯Êý - ¼àÌýÒ³Ãæ³õ´ÎäÖÈ¾Íê³É
+   * /
+  onReady £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * ç”Ÿå‘½å‘¨æœŸå‡½æ•°--ç›‘å¬é¡µé¢æ˜¾ç¤º
-   */
-  onShow: function () {
+  / **
+   *ÉúÃüÖÜÆÚº¯Êý - ¼àÌýÒ³ÃæÏÔÊ¾
+   * /
+  onShow £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * ç”Ÿå‘½å‘¨æœŸå‡½æ•°--ç›‘å¬é¡µé¢éšè—
-   */
-  onHide: function () {
+  / **
+   *ÉúÃüÖÜÆÚº¯Êý - ¼àÌýÒ³ÃæÒþ²Ø
+   * /
+  onHide £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * ç”Ÿå‘½å‘¨æœŸå‡½æ•°--ç›‘å¬é¡µé¢å¸è½½
-   */
-  onUnload: function () {
+  / **
+   *ÉúÃüÖÜÆÚº¯Êý - ¼àÌýÒ³ÃæÐ¶ÔØ
+   * /
+  onUnload £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * é¡µé¢ç›¸å…³äº‹ä»¶å¤„ç†å‡½æ•°--ç›‘å¬ç”¨æˆ·ä¸‹æ‹‰åŠ¨ä½œ
-   */
-  onPullDownRefresh: function () {
+  / **
+   *Ò³ÃæÏà¹ØÊÂ¼þ´¦Àíº¯Êý - ¼àÌýÓÃ»§ÏÂÀ­¶¯×÷
+   * /
+  onPullDownRefresh £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * é¡µé¢ä¸Šæ‹‰è§¦åº•äº‹ä»¶çš„å¤„ç†å‡½æ•°
-   */
-  onReachBottom: function () {
+  / **
+   *Ò³ÃæÉÏÀ­´¥µ×ÊÂ¼þµÄ´¦Àíº¯Êý
+   * /
+  onReachBottom £º function£¨£©{
 
-  },
+  }£¬
 
-  /**
-   * ç”¨æˆ·ç‚¹å‡»å³ä¸Šè§’åˆ†äº«
-   */
-  onShareAppMessage: function () {
+  / **
+   *ÓÃ»§µã»÷ÓÒÉÏ½Ç·ÖÏí
+   * /
+  onShareAppMessage £º function£¨£©{
 
   }
-})
+}£©
+
+  / **
+   *µÚÒ»´ÎÉÏ´«
+   * /
