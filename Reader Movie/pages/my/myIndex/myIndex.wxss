@@ -1,0 +1,67 @@
+page {
+    background: #fff
+}
+
+.about-user {
+    text-align: center;
+    display: flex;
+    flex-direction: column
+}
+
+.user-top {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2221240850,4060268262&fm=26&gp=0.jpg);
+}
+
+.user-btn {
+    width: 300rpx;
+    margin: 200rpx 30% 200rpx 30%;
+}
+
+.user-avatar {
+    width: 218rpx;
+    height: 218rpx;
+    margin: 200rpx 0 50rpx 50%;
+    position: relative;
+    left: -109rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-name {
+    color: #fff;
+    font-size: 46rpx;
+    font-weight: bold;
+}
+
+.text-grey {
+    padding-left: 50rpx;
+}
+
+.text-item {
+    color: var(--grey);
+    display: block;
+    position: fixed;
+    right: 50rpx
+}
+
+.user-item {
+    width: 100%;
+    line-height: 30rpx
+}
+
+.gif-wave{
+  position: relative;
+  width: 100%;
+  bottom: 0rpx;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 110rpx;   
+}
+
+.cu-item {
+    background-color: #f9f9f9!important;
+    justify-content: left!important
+}

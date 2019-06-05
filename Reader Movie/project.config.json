@@ -4,21 +4,24 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"autoAudits": false,
+		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.2",
+	"libVersion": "2.4.2",
 	"appid": "wx60ce1faa4d8fc003",
-	"projectname": "ReadMovie",
+	"projectname": "%E5%A3%B9%E6%9F%92%E7%9C%8B%E7%94%B5%E5%BD%B1",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -41,15 +44,15 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "welcome",
-					"pathName": "pages/welcome/welcome",
+					"name": "logs",
+					"pathName": "pages/my/mylogs/mylogs",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "post",
-					"pathName": "pages/post/post",
+					"name": "我的",
+					"pathName": "pages/my/myIndex/myIndex",
 					"scene": null
 				}
 			]

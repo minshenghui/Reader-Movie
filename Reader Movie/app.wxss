@@ -1,4 +1,2 @@
-/**app.wxss**/
-text {
-  font-family: MicroSoft Yahei;
-}
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";

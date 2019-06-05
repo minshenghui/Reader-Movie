@@ -1,0 +1,52 @@
+<view class="about-user">
+    <view class="user-top">
+        <!-- 需要用户授权 -->
+        <!-- <button class="user-btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+         获取头像昵称</button>
+        <block wx:else>
+            <image class="user-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="user-name">{{userInfo.nickName}}</text>
+        </block> -->
+
+        <!-- 无需用户授权 -->
+        <open-data class="user-avatar" type="userAvatarUrl"></open-data>
+        <open-data class="user-name" type="userNickName"></open-data>
+        <image src="../../../images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+
+    <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+
+        <view class="cu-item arrow user-item" bindtap="CopyLink" data-link="https://github.com/minshenghui">
+            <text class="cuIcon-github text-black"></text>
+            <text class="text-grey">GitHub</text>
+        </view>
+        <view class="cu-item arrow user-item" bindtap="logs">
+            <text class="cuIcon-formfill text-green"></text>
+            <text class="text-grey">登陆日志</text>
+        </view>
+        <view class="cu-item arrow user-item" bindtap="copyRight">
+            <text class="cuIcon-infofill text-green"></text>
+            <text class="text-grey">关于</text>
+        </view>
+        <view class="cu-item user-item">
+            <text class="cuIcon-warn text-green"></text>
+            <text class="text-grey">微信版本</text>
+            <text class="text-item">{{ version }}</text>
+        </view>
+        <view class="cu-item user-item">
+            <text class="cuIcon-mobilefill text-green"></text>
+            <text class="text-grey">机型</text>
+            <text class="text-item">{{ model }}</text>
+        </view>
+        <view class="cu-item user-item">
+            <text class="cuIcon-mobile text-green"></text>
+            <text class="text-grey">系统</text>
+            <text class="text-item">{{ system }}</text>
+        </view>
+        <view class="cu-item user-item">
+            <text class="cuIcon-focus text-green"></text>
+            <text class="text-grey">分辨率</text>
+            <text class="text-item">{{ screenWidth }}px * {{ screenHeight }}px</text>
+        </view>
+    </view>
+</view>

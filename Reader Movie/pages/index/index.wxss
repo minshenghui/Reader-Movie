@@ -1,21 +1,94 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* pages/index/index.wxss */
+page {
+    background:#fff
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+swiper {
+    height: 460rpx;
+    margin-top: 20rpx
 }
 
-.userinfo-nickname {
-  color: #aaa;
+swiper swiper-item image {
+    border-radius: 6rpx;
+    z-index: 1
 }
 
-.usermotto {
-  margin-top: 200px;
+/* swiper swiper-item text {
+    background: red;
+    font-size: 36rpx;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 99
+
+} */
+
+swiper .wx-swiper-dot {
+    margin-bottom: 10rpx;
+    width: 10rpx;
+    height: 10rpx;
+    background: #979797;
+    border-radius: 50%;
+}
+
+swiper .wx-swiper-dot-active {
+    width: 30rpx;
+    height: 10rpx;
+    background: #fff;
+    border-radius: 10rpx;
+}
+
+image.active {
+    width: 330rpx;
+    height: 460rpx;
+    transition: all 0.1s ease-in 0s;
+    position: relative;
+    left: 50%;
+    margin-left: -165rpx;
+    z-index: 1
+}
+
+image.quiet {
+    width: 260rpx;
+    height: 360rpx;
+    opacity: 0.68;
+    position: relative;
+    left: 45rpx;
+    top: 50rpx;
+    transition: all 0.1s ease-in 0s;
+}
+
+.index-list {
+    width: 100%;
+}
+
+.list-grid {
+    height: 250rpx;
+    background: #f3f3f3;
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row
+}
+
+.list-img {
+    width: 360rpx;
+    border-radius: 10rpx;
+    height: 210rpx;
+    margin: 20rpx;
+    background-position: 100% 100%;
+}
+
+.list-title {
+    display: block;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin: 10rpx 66rpx 10rpx 0;
+}
+
+.list-director,.list-actors {
+    line-height: 36rpx;
+    font-size: 24rpx;
+    color: #979797;
+    display: block
 }

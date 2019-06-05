@@ -1,14 +1,43 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/welcome/welcome",
-    "pages/post/post"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#b3b4bd",
-    "navigationBarTitleText": "Reader Movie",
-    "navigationBarTextStyle":"black"
-  }
+    "pages": [
+        "pages/index/index",
+        "pages/movie-list/movie-list",
+        "pages/my/myIndex/myIndex",
+        "pages/my/mylogs/mylogs",
+        "pages/my/copyRight/copyRight"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "ColorUI",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "文章",
+                "iconPath": "images/icon/list.png",
+                "selectedIconPath": "images/icon/list-s.png"
+            },
+            {
+                "pagePath": "pages/movie-list/movie-list",
+                "text": "电影",
+                "iconPath": "images/icon/article.png",
+                "selectedIconPath": "images/icon/article-s.png"
+            },
+            {
+                "pagePath": "pages/my/myIndex/myIndex",
+                "text": "我的",
+                "iconPath": "images/icon/about.png",
+                "selectedIconPath": "images/icon/about-s.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "cu-custom": "/colorui/components/cu-custom"
+    },
+    "sitemapLocation": "sitemap.json"
 }

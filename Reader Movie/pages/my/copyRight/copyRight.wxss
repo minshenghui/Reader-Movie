@@ -1,0 +1,30 @@
+/* pages/my/copyRight/copyRight.wxss */
+page {
+    background: #fff
+}
+
+.copy-right {
+    text-align: center;
+    padding-top: 100rpx
+}
+
+.msunh-img {
+    width: 288rpx;
+    height: 288rpx;
+}
+
+.cr-msunh {
+    display: block;
+    font-weight: bold;
+    font-size: 36rpx;
+    line-height: 56rpx;
+    text-align: center;
+    color: #333
+}
+
+.cr-text {
+    display: block;
+    font-size: 26rpx;
+    line-height: 46rpx;
+    color: #979797
+}
