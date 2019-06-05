@@ -13,7 +13,7 @@
 <view class="index-list">
     <block wx:for="{{ movieList }}" wx:key wx:for-item="movie" wx:if="{{ index >= 5 }}">
         <view class="list-grid">
-            <image class="list-img" src="{{ movie.imgVideoUrl[0].image == null ? '../../images/bg.jpg' : movie.imgVideoUrl[0].image }}"></image>
+            <image class="list-img" src="{{ movie.imgVideoUrl[0].image == null ? '/images/icon/star.png' : movie.imgVideoUrl[0].image }}"></image>
             <view>
                 <text class="list-title">{{ movie.title }}</text>
                 <!-- <text class="list-average">{{ movie.average }}</text> -->
